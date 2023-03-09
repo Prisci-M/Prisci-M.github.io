@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    grid-area: header;
+    padding: 5px 5px 0px 5px;
+    background-color: #F6F5EC;
+}
+
+.navbar {
+    grid-area: navbar;
+    padding: 2px;
+    background-color: #F6F5EC;
+}
+
+.main {
+    grid-area: main;
+    padding: 5px 10px 15px 10px;
+    background-color: #F6F5EC;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 5px 12px 5px 12px;
+    background-color: #E6CEBC;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 0px 10px 0px 10px;
+    background:linear-gradient(50deg,rgb(253, 177, 142),rgb(250, 184, 153));
+}
+
+.semantica {
+    display: grid;
+    grid-template:
+    "sidebar header"  100px
+    "sidebar navbar"  30px
+    "sidebar main" auto
+    "footer footer"  45px/
+    150px    auto;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #8e412e52;    
+}
+
+h3{
+    padding: 5px 20px 6px 20px;
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: bold;
+    color: #921303;
+}
+
+h4{
+    color: #be6b60;
+    padding: 3px 0px 1px 0px;
+    font-size: 0.1em;
+    text-align: left;
+}
+
+.texto0 {
+    max-width: 100%;
+    padding: 10px 10px 0px 10px;
+    font-size: 0.8em;
+    color:#C2301E;
+}
+
+.texto1 {
+    padding: 5px;
+    font-size: 0.4em;
+    color:#8e412ede;
+}
+
+.texto2{
+    padding: 3px 3px 3px 0px;
+    font-size: 0.6em;
+    font-weight:bold;
+    color:#9c1200;
+}
+.texto3{
+    padding: 3px 0px 2px 0px;
+    font-size: 0.3em;
+    text-size-adjust: 100%;
+    text-align: left;
+}
+
+.texto4{
+    font-size: 1.5em;
+    padding: 7px;
+    color:#531100;
+}
+
+.texto5{
+    padding: 4px 0px 2px 12px;
+    align-items: initial;
+    list-style-type:square;
+    text-align:initial;
+    font-size: 0.3em;
+}
+
+.texto6{
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    font-size: 0.4em;
+    color:#531100;
+}
+
+.texto7{
+    padding: 0px 20px 0px 16px;
+    text-align:initial;
+    font-size: 0.4em;
+    color:#531100;
+    list-style-type: none;
+}
+
+.lista_izq{
+    list-style-type:none;
+    text-align: left;
+    font-size: 0.3em;
+}
+
+.fotoperfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    border:2px solid#8E412E;
+}
+
+.fotopc{
+    width: 40px;
+    height: 40px;
+    padding:3px;
+    background-size: cover;
+}
+
+.icon-location{
+    font-size: 2.3em;
+}
+.icon-phone{
+    font-size: 2.3em;
+}
+.icon-mail3{
+    font-size: 2.3em;
+}
+.icon-briefcase{
+    padding: 3px;
+    font-size: 0.6em;
+    color:#be1701;
+}
+.icon-book{
+    padding: 3px;
+    font-size: 0.6em;
+    color:#be1701;
+}
+.icon-rocket{
+    padding: 3px;
+    font-size: 0.6em;
+    color:#be1701;
+}
+
+.botonmenu{
+    width: 8em;
+    font-size: 0.4em;
+    background-color: #996153;
+    border: 1px solid #996153c2;
+}
+
+.botonmenu a{
+    text-decoration: none;
+    color:#f1f1f1;
+}
+.botonmenu:hover{
+    background-color: #921303;
+    border: 1px solid #921303;
+    box-shadow: 0 0 10px rgba(221, 163, 124, 0.8);
+}
+
+.boton_icono {
+    margin-bottom: 2px;
+    font-size: 0.5em;
+    color:#F6F5EC;
+}
+  
+.boton_icono a {
+    margin:0px 5px 0px 5px;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #dd4d3d;
+    color: #f1f1f1;
+    transition: all .3s ease-in-out;
+}
+
+.boton_icono a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.barra{
+    width: 12em;
+    height: 0.4em;
+    border-radius: 0.7em;
+    background: #b31b1b65;
+    box-shadow:1px 2px 5px #996153;
+}
+
+.progreso{
+    height: 0.4em;
+    width: var(--w);
+    border-radius: 0.7em;
+    background: #be6b60;
+    animation:Aumentar 5s ease;
+}
+
+.botonImportante{
+    width: 6em;
+    height: 2em;
+    font-size: 0.4em;
+    background-color: #c08576ea;
+    border: 1px solid #c08576ea;
+}
+
+.botonImportante a{
+    text-decoration: none;
+    color:#f1f1f1;
+}
+
+.botonImportante:hover{
+    background-color: #c76a5d;
+    border: 1px solid #c76a5d;
+}
+
+.infoExtra {
+    display: none;
+}
+  
+.infoExtraVisible {
+    display: block;
+}
+
+@keyframes Aumentar{
+    0%{width:0%;}
+    100%{width: var(--w)}
+}
+
+@media (min-width: 900px) {
+    .semantica {
+        grid-template:
+        "sidebar  header" 280px
+        "sidebar  navbar" 50px
+        "sidebar main"   auto
+        "footer  footer" 120px /
+        400px    auto;
+    }
+    .main{
+        padding: 20px 10px 80px 30px
+    }
+    .fotoperfil{
+        width: 280px;
+        height: 280px;
+        margin-top: 20px;
+        border:5px solid#8E412E;
+    }
+    .fotopc{
+        width: 90px;
+        height: 90px;
+        background-size: cover;
+    }
+    hr {
+        border: 3px solid #8e412e52; 
+        border-style: dotted;
+    }
+    h3{
+        padding: 25px 20px 20px 25px;
+        font-size: 1.4em;
+    }
+    h4{
+        padding: 15px 10px 10px 20px;
+        font-size: 1.2em;
+    }
+    .texto0 {
+        padding: 10px 10px 0px 10px;
+        font-size: 3em;
+    }
+    .texto1 {
+        padding : 10px;
+        font-size: 1.3em;
+    }
+    .texto2{
+        font-size: 1.5em;
+
+    }
+    .texto3{
+        padding: 5px 10px 10px 20px;
+        font-size: 1em;
+    }
+    .texto4{
+        font-size: 3.5em;
+        padding-left: 20px;
+    }
+    .texto5{
+        padding: 10px 10px 40px 45px;
+        font-size: 1em;
+    }
+    .texto6{
+        padding: 30px 30px 5px 30px;
+        font-size: 1em;
+    }
+    .texto7{
+        padding: 0px 20px 0px 40px;
+        font-size: 1em;
+    }
+    .icon-location{
+        margin-left: 25px;
+        font-size: 5em;
+    }
+    .icon-phone{
+        margin-left: 25px;
+        font-size: 5em;
+    }
+    .icon-mail3{
+        margin-left: 25px;
+        font-size: 5em;
+    }
+    .icon-briefcase{
+        font-size: 1.3em;
+    }
+    .icon-book{
+        font-size: 1.3em;
+    }
+    .icon-rocket{
+        font-size: 1.3em;
+    }
+    .botonmenu{
+        width: 10em;
+        height: 2em;
+        font-size: 1em;
+    }
+    .botonmenu:hover{
+        box-shadow: 0 0 20px rgba(230, 150, 136, 0.8);
+    }
+    .boton_icono {
+        font-size: 1.3em;
+    }
+    .boton_icono a:hover {
+      box-shadow: 0 0 25px rgb(255, 255, 255);
+      transform: scale(1.5);
+    }
+    .barra{
+        width: 95em;
+        height: 0.6em;
+        box-shadow: 3px 5px 10px #996153;
+    }
+    .progreso{
+        height: 0.6em;
+    }
+    .tipocomp{
+        padding-left: 30px;
+    }
+    .botonImportante{
+        margin-top: 20px;
+        width: 6em;
+        height: 2em;
+        font-size: 1em;
+    }
+    .botonImportante:hover{
+        color:#f1f1f1;
+    }
+}
